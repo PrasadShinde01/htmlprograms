@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Form</title>
+
+    <style>
+      body {
+        font-size: medium;
+        background-color: black;
+        color: azure;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input,
+      textarea {
+        background-color: rgb(43, 36, 36);
+        color: rgb(42, 219, 54);
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <legend>Fill you details</legend><br><br>
+    <form action="">
+      <label for="fName">
+        First Name :
+        <input type="text" id="fName" placeholder="Enter you First Name" />
+      </label>
+      <label for="lName">
+        Last Name :
+        <input type="text" id="lName" placeholder="Enter you Last Name" />
+      </label>
+      <label for="gender"
+        >Male <input type="radio" value="male" name="gender"/> Female <input type="radio" name="gender" value="female"
+      /></label>
+
+      <label for="pd">
+        Password : 
+		<input type="password" required pattern="^(?=.*\d)[0-9a-zA-Z](6,)$" title="password should be minimum of 6 characters long and contains atleast 
+	  one number">
+      </label>
+      <label for="mail">
+        Email <em>@</em> : <input required type="email" id="mail" placeholder=" Email..." />
+      </label>
+	  
+	  <label for="cars">Choose a car:</label>
+	  <select id="cars" name="cars" size="3">
+	  <option value="volkswagon">VolksWagon</option>
+      <option value="mercedez">mercedez</option>
+      <option value="Lamborgini">Lamborgini</option>	  
+	  
+      <label for="add">Address : </label>
+      <textarea name="addres" id="add" cols="30" rows="10"></textarea>
+
+      <label for="check"> Single ? <input type="checkbox" value="ture"  id="check" true></label>
+      <label for="rate"> Smartness <input type="range" id="rate"></label>
+      <input type="submit" />
+      <a
+        href="https://4kwallpapers.com/black-dark/satoru-gojo-jujutsu-10828.html"
+        target="_blank"
+        >Gojo</a
+      >
+    </form>
+  </body>
+</html>
